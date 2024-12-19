@@ -36,7 +36,7 @@ def image_to_ascii(img):
 
 if __name__ == "__main__":
 
-    cap = cv2.VideoCapture("./data/pepe.mp4")
+    cap = cv2.VideoCapture("./data/chad.mp4")
     fps = cap.get(cv2.CAP_PROP_FPS)
 
     if fps == 0:
