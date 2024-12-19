@@ -35,14 +35,6 @@ def image_to_ascii(img):
 
 
 if __name__ == "__main__":
-    # img_path = "/mnt/c/Users/pongp/OneDrive/Pictures/Screenshots/Screenshot_20221026_012358.png"
-
-    # img = cv2.imread(img_path)
-    # resized_img = resize_img(img)
-    # cv2.imshow("pic", img)
-    # if cv2.waitKey(0) & 0xFF == ord("q"):
-    #     pass
-    # cv2.destroyAllWindows()
 
     cap = cv2.VideoCapture("./data/pepe.mp4")
     fps = cap.get(cv2.CAP_PROP_FPS)
@@ -71,7 +63,3 @@ if __name__ == "__main__":
 
     cap.release()
     cv2.destroyAllWindows()
-
-    # print(new_width)
-    # print(new_height)
-    # cv2.imwrite("./output/test.png", gray_img)
