@@ -1,6 +1,8 @@
+import time
+
 import cv2
 
-ASCII_CHAR = ".,-~:;=!*#$@"
+ASCII_CHAR = " .,:;+*?%S#@"
 
 
 def resize_img(img, new_height=100):
@@ -61,6 +63,8 @@ if __name__ == "__main__":
         print(ascii_img)
         print(len(ascii_img))
         # cv2.imshow("camera", frame)
+
+        time.sleep(1 / fps)
 
         if cv2.waitKey(0) & 0xFF == ord("q"):
             break
